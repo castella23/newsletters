@@ -1,0 +1,331 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+}
+
+:root {
+      --primary-color: purple;
+      --secondary-color: whitesmoke;
+      --tertiary-color: #100a15;
+}
+
+header {
+      background-color: var(--tertiary-color);
+      color: var(--secondary-color);
+      padding: 2rem;
+}
+
+nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+}
+
+nav li {
+      display: inline-block;
+      margin-right: 10px;
+}
+
+nav a {
+      color: var(--secondary-color);
+
+      text-decoration: none;
+}
+
+
+main {
+      padding: 20px;
+}
+
+h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+}
+
+
+footer {
+      background-color: var(--tertiary-color);
+      color: var(--secondary-color);
+
+      padding: 10px;
+      text-align: center;
+}
+
+
+.title .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+}
+
+.title .top .line {
+      flex-basis: 90%;
+      height: 5px;
+      background: var(--primary-color);
+}
+
+.title .top span {
+      flex-basis: 10%;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+}
+
+.title h1 {
+      font-size: 10rem;
+      display: block;
+      color: var(--primary-color);
+      text-align: center;
+      text-transform: uppercase;
+}
+
+.title .date {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+}
+
+.date span:first-child {
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: var(--secondary-color);
+
+      text-transform: uppercase;
+}
+
+.date span:last-child {
+      text-transform: uppercase;
+}
+
+.banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 1rem;
+      margin-top: 2rem;
+}
+
+.banner article,
+.banner figure {
+      flex-basis: 50%;
+      min-height: 80vh;
+}
+
+.banner article {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      text-transform: uppercase;
+      padding: 2rem;
+}
+
+.banner article li {
+      margin: 1rem 0;
+}
+
+
+.company {
+      display: flex;
+      align-items: start;
+      padding: 1rem;
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      justify-content: space-between;
+      text-transform: uppercase;
+      min-height: 30vh;
+      margin-top: 4rem;
+}
+
+.company article,
+.company figure {
+      flex-basis: 50%;
+}
+
+.company figure img {
+      height: 15rem;
+      width: 100%;
+      object-fit: cover;
+
+}
+
+/* stats */
+
+
+.statistics {
+      display: flex;
+      align-items: start;
+      padding: 1rem;
+
+      color: var(--primary-color);
+      justify-content: space-between;
+      text-transform: uppercase;
+      min-height: 30vh;
+      margin-top: 4rem;
+}
+
+.statistics article,
+.statistics figure {
+      flex-basis: 50%;
+}
+
+.statistics figure img {
+      height: 15rem;
+      width: 100%;
+      object-fit: cover;
+
+}
+
+.subscribe {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 1.5rem;
+      gap: 2rem;
+}
+
+.subscribe a {
+      text-decoration: none;
+      background: var(--secondary-color);
+      color: var(--primary-color);
+      padding: 1rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+}
+
+.subscribe a:hover {
+      transform: scale(1.1);
+}
+
+.archive {
+      width: 100%;
+}
+
+.archive ul li {
+      gap: 1rem;
+      display: flex;
+      align-items: start;
+      padding: 1rem;
+      border-radius: 0.5rem;
+}
+
+.archive ul li:nth-child(odd) {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+}
+
+
+.archive ul li:nth-child(odd) a {
+      color: var(--secondary-color);
+      background: var(--primary-color);
+      border: 2px solid var(--secondary-color)
+}
+
+.archive ul li:nth-child(even) {
+      color: var(--primary-color);
+      background: var(--secondary-color);
+}
+
+.archive ul li:nth-child(even) a {
+      color: var(--primary-color);
+      background: var(--secondary-color);
+      border: 2px solid var(--primary-color);
+
+}
+
+.archive ul li :is(.body, .image) {
+      flex-basis: 50%;
+      position: relative;
+}
+
+.body p,
+.body a,
+.body h2 {
+      line-height: 1.7;
+}
+
+.body a {
+      text-decoration: none;
+      transition: all 0.3s;
+      padding: 1rem;
+      border-radius: 5px;
+}
+
+.body a:hover {
+      transform: scale(1.1);
+}
+
+.readMore {
+      position: absolute;
+      bottom: -5rem;
+}
+
+.image img {
+      height: 15rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+}
+
+.subs {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      max-width: 50rem;
+      margin: 1px auto;
+}
+
+.subs .benefits {
+      margin: 2rem 0;
+}
+
+.subs form {
+      font-size: 2rem;
+      gap: 1rem;
+}
+
+.subs .subsBanner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+}
+
+.subsBanner figure,
+.subsBanner article {
+      flex-basis: 50%;
+}
+
+.subsBanner img {
+      width: 100%;
+      border-radius: 5px;
+}
+
+form input {
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid var(--primary-color);
+      outline: none;
+      font-family: "Poppins", sans-serif;
+}
+
+form button {
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      border-radius: 10px;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      transition: all 0.3s ease;
+}
+
+form button:hover {
+      transform: scale(1.1);
+}
